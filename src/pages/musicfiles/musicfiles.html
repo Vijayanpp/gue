@@ -1,0 +1,44 @@
+<!--
+   Generated template for the Musicfiles page. 
+   -->
+<ion-header >
+   <ion-navbar >
+      <ion-title class='header'></ion-title>
+   </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+   <page-loading *ngIf='isRequesting'></page-loading>
+   <ion-list *ngIf='!isRequesting'>
+      <ion-item *ngFor="let music of musics"   >
+         <div class='module-player'>
+            <audio-track-play [music]="music"  (MusicStatusChange)="startNewPlayer($event)"></audio-track-play>
+         </div>
+         
+         <div class='title'> {{music.title}}</div>
+         <div class='duration' item-right>
+            <div>
+               {{music.duration}}
+            </div>
+            <audio-download [music]="music"  *ngIf='!isDownloading'></audio-download>
+         </div>
+      </ion-item>
+   </ion-list>
+</ion-content>
+<ion-footer>
+   <audioplayer>
+   </audioplayer>
+   <ion-toolbar>
+      <div class='center-tool'>
+         <a href=''>
+            <ion-icon ios="ios-information-circle" md="ios-information-circle-outline" [navPush]="aboutPage"></ion-icon>
+         </a>
+         <a href='mailto:sven.waechli@zdrei.com'>
+            <ion-icon ios="ios-mail" md="ios-mail-outline"></ion-icon>
+         </a>
+         <a href='#'>
+            <ion-icon ios="ios-heart" md="ios-heart-outline" (click)='showPopover()'></ion-icon>
+         </a>
+      </div>
+   </ion-toolbar>
+</ion-footer>

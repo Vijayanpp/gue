@@ -1,0 +1,157 @@
+// http://ionicframework.com/docs/v2/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.ion-page {
+    background: rgba(189, 235, 238, 1);
+    background: -moz-linear-gradient(top, rgba(189, 235, 238, 1) 0%, rgba(226, 243, 200, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(189, 235, 238, 1)), color-stop(100%, rgba(226, 243, 200, 1)));
+    background: -webkit-linear-gradient(top, rgba(189, 235, 238, 1) 0%, rgba(226, 243, 200, 1) 100%);
+    background: -o-linear-gradient(top, rgba(189, 235, 238, 1) 0%, rgba(226, 243, 200, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(189, 235, 238, 1) 0%, rgba(226, 243, 200, 1) 100%);
+    background: linear-gradient(to bottom, rgba(189, 235, 238, 1) 0%, rgba(226, 243, 200, 1) 100%);
+}
+audioplayer {
+    width: 100%;
+    position: fixed;
+    bottom: 44px;
+    background: #b0e5c2;
+    left: 0;
+    z-index: 9999;
+}
+a:hover {
+    color: #000;
+}
+.back-button.show {
+    display: inline-block;
+    margin-left: 10px;
+}
+ion-navbar .toolbar-background {
+    background: url("../assets/images/title.png") #90dde3 center center no-repeat;
+    height: 55px;
+}
+ion-content {
+    background: rgba(189, 235, 238, 1);
+    background: -moz-linear-gradient(top, rgba(189, 235, 238, 1) 0%, rgba(226, 243, 200, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(189, 235, 238, 1)), color-stop(100%, rgba(226, 243, 200, 1)));
+    background: -webkit-linear-gradient(top, rgba(189, 235, 238, 1) 0%, rgba(226, 243, 200, 1) 100%);
+    background: -o-linear-gradient(top, rgba(189, 235, 238, 1) 0%, rgba(226, 243, 200, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(189, 235, 238, 1) 0%, rgba(226, 243, 200, 1) 100%);
+    background: linear-gradient(to bottom, rgba(189, 235, 238, 1) 0%, rgba(226, 243, 200, 1) 100%);
+    .author {
+        font-size: 0.9em;
+        padding-top: 0.3em;
+    }
+    div.title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 170px;
+        float: left;
+        line-height: 3.5em;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 600px;
+        line-height: 52px;
+    }
+    .duration {
+        text-align: right;
+        padding-top: 0.3em;
+    }
+    .item-block {
+        background: none;
+    }
+    .item-block:hover {
+        background: #e6f7e5;
+    }
+}
+.download {
+    position: relative;
+    margin-top: -5px;
+}
+.download a {
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: regular;
+}
+@media (max-width: 1024px) {
+    div.title {
+        font-size: 14px;
+    }
+    .download a {
+        font-size: 14px;
+    }
+}
+ion-icon#play {
+    color: #ff5c65;
+    cursor: pointer;
+    font-size: 25px;
+}
+a {
+    color: #ff5c65;
+}
+ion-icon#pause {
+    color: #29de73;
+    font-size: 25px;
+    cursor: pointer;
+}
+.module-player {
+    float: left;
+}
+.scroll-content {
+    padding: 0 !important;
+}
+.item-ios,
+.item-md {
+    padding-left: 0;
+}
+.item-ios.item-block .item-inner,
+.list-md .item-block .item-inner {
+    padding-left: 16px;
+}
+.range-slider .range-knob,
+.range-md .range-knob-min.range-knob-min .range-knob {
+    background: #2ade75;
+    border: 2px solid #fff;
+    width: 28px;
+    height: 28px;
+}
+.range-md .range-knob-handle {
+    top: 15px;
+}
+.range-slider .range-knob,
+.range-md .range-knob-min.range-knob-min .range-knob {
+    border-radius: 50%;
+}
+.range-slider .range-bar {
+    height: 3px;
+    background: #7ba087;
+}
+.bar-button-default-ios,
+.bar-button-default.bar-button-ios-default,
+.bar-button-clear-ios-default {
+    color: #222;
+    font-size: 15px;
+}
+.range-slider .range-bar-active {
+    bottom: 0;
+    width: auto;
+    background: #9fbd27;
+}
+.popover-content .scroll-content {
+    position: relative;
+    overflow: hidden!important;
+}
+.addColor {
+    color: #2ade75!important;
+}

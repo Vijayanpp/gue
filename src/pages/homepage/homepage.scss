@@ -1,0 +1,23 @@
+page-homepage {} page-homepage ion-content:before {
+    background: url(../assets/images/home2.png);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+}
+.board {
+    width: 119px;
+    height: 121px;
+    background: #000;
+    position: absolute;
+    bottom: 40px;
+    left: 65px;
+    background: url(../assets/images/start-board.png);
+    cursor: pointer;
+}
+.pp {
+    display: none;
+}

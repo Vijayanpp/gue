@@ -1,0 +1,7 @@
+<ion-range [(ngModel)]="range" min="0" max="100" (ionChange)="seekTo()">
+<span *ngIf="webAudioPlayer.isLoading">loading..........</span>
+<time *ngIf="!showProgress" range-left>0.00</time>
+<time *ngIf="showProgress" range-left>{{webAudioPlayer.progress | audiotimepipe  }}</time>
+<time *ngIf="showDuration" range-right>{{webAudioPlayer.duration | audiotimepipe }}</time>
+<time *ngIf="!showDuration" range-right>0.00</time>
+</ion-range>

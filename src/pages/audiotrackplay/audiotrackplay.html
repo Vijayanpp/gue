@@ -1,0 +1,8 @@
+<div>
+   <ion-icon name="play" id='play' item-left [class.addColor]="music.isPaused" (click)='onSelect(music)' *ngIf="!music.isPlaying"></ion-icon>
+   <ion-icon name="pause" id='pause' item-left (click)='pauseMusic()' *ngIf="music.isPlaying"></ion-icon>
+</div>
+<!-- <page-loading *ngIf='connecting'></page-loading> -->
+<div class='spin-container'>
+   <ion-spinner name="bubbles" *ngIf='connecting'></ion-spinner>
+</div>

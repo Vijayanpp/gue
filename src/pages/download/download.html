@@ -1,0 +1,8 @@
+ <div class='download'>       
+    <a href="#" (click)="downloadMusic(music.url)" *ngIf='!isDownloading' class='top'>
+    Download
+    </a>
+    <span *ngIf='isDownloading'>
+    <download-progress [classValue]='downloaded'>{{downloaded}}%</download-progress>
+    </span>
+    </div>
